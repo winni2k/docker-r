@@ -1,4 +1,3 @@
-FROM rocker/r-ver:3.6.3
+FROM rocker/r-ver:4.0.0
 
-RUN apt-get update
-RUN apt-get install r-cran-treespace -y
+RUN install2.r --error treespace
